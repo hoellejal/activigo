@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/marginBetweenWidget"
+        android:layout_marginBottom="@dimen/marginBetweekWidgetSameFamily">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:id="@+id/name"
+            android:layout_marginRight="@dimen/marginBetweekWidgetSameFamily"
+            android:background="@android:drawable/editbox_background"
+            android:hint="@string/titre"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="textMultiLine"
+        android:hint="@string/description"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/choosePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="@dimen/paddingButton"
+            android:background="@drawable/zone_texte_bord_rond"
+            android:backgroundTint="@color/bleuActivigo"
+            android:text="Choisir la photo"
+            android:onClick="pickFromGallery" />
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            tools:srcCompat="@tools:sample/avatars" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/marginBetweenWidget">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="@string/criterePeuConnu"/>
+
+        <SeekBar
+            android:layout_width="@dimen/seekBarWidth"
+            android:layout_height="wrap_content"
+            android:max="4"
+            android:progress="2"
+            android:id="@+id/activity_progressbar_reputation"
+            android:progressTint="@color/lightGray"
+            android:thumb="@drawable/seek_bar_custom_thumb"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="@string/criterePopulaire"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="@string/critereGratuit"/>
+
+        <SeekBar
+            android:layout_width="@dimen/seekBarWidth"
+            android:layout_height="wrap_content"
+            android:max="4"
+            android:progress="2"
+            android:id="@+id/activity_progressbar_prix"
+            android:progressTint="@color/lightGray"
+            android:thumb="@drawable/seek_bar_custom_thumb"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="@string/critereCher"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/marginBetweenWidget"
+        android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="@string/critereNature"/>
+
+        <SeekBar
+            android:layout_width="@dimen/seekBarWidth"
+            android:layout_height="wrap_content"
+            android:max="4"
+            android:progress="2"
+            android:id="@+id/activity_progressbar_nature"
+            android:progressTint="@color/lightGray"
+            android:thumb="@drawable/seek_bar_custom_thumb"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="@string/critereVille"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/marginBetweekWidgetSameFamily"
+        android:background="@android:color/black" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:minWidth="250dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/marginBetweekWidgetSameFamily">
+
+            <CheckBox
+                android:id="@+id/sportif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/jauneActivigo"
+                android:text="@string/activiteSportive" />
+
+            <CheckBox
+                android:id="@+id/culturel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginBetweekWidgetSameFamily"
+                android:buttonTint="@color/jauneActivigo"
+                android:text="@string/activiteCulturelle" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/marginBetweekWidgetSameFamily">
+
+            <CheckBox
+                android:id="@+id/groupe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/jauneActivigo"
+                android:text="@string/activiteGroupe" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginBetweekWidgetSameFamily"
+                android:id="@+id/adecouvrir"
+                android:buttonTint="@color/jauneActivigo"
+                android:text="@string/activiteADecouvrir" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/divertissement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/jauneActivigo"
+                android:text="@string/activiteDivertissement" />
+
+            <CheckBox
+                android:id="@+id/gastronomique"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginBetweekWidgetSameFamily"
+                android:buttonTint="@color/jauneActivigo"
+                android:text="@string/activiteGastronomique" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/marginBetweenWidget"
+        android:layout_marginBottom="@dimen/marginTopApplication"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/valider"
+            android:layout_marginRight="@dimen/marginLeftButtons"
+            android:background="@drawable/zone_texte_bord_rond"
+            android:backgroundTint="@color/bleuActivigo"
+            android:padding="@dimen/paddingButton"
+            android:text="Valider"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/zone_texte_bord_rond"
+            android:layout_marginLeft="@dimen/marginLeftButtons"
+            android:backgroundTint="@color/colorAccent"
+            android:padding="@dimen/paddingButton"
+            android:id="@+id/annuler"
+            android:text="Annuler"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

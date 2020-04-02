@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "867837191345",
+    "firebase_url": "https://activigo-eb56b.firebaseio.com",
+    "project_id": "activigo-eb56b",
+    "storage_bucket": "activigo-eb56b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867837191345:android:92c9798d909c166d202e90",
+        "android_client_info": {
+          "package_name": "com.example.activigo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867837191345-f2bmh6ahhlkg0j0hdoi47j4i6bbn83bo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.activigo",
+            "certificate_hash": "700bfe2819dd4c1d4ac53282b5a784899c3493d3"
+          }
+        },
+        {
+          "client_id": "867837191345-5t98nfir0kgqmftcgnj6dsifittm64ei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMw9yqrIwEmSHigcGlZeamHQDrrgf1hsA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "867837191345-5t98nfir0kgqmftcgnj6dsifittm64ei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

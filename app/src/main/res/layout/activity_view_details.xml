@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|top"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/activity_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/heightImageActivityDetails"
+                    android:contentDescription="@string/imageDescription"
+                    android:src="@drawable/adventurealpsbackpack554609"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/wishlist"
+                    android:layout_marginLeft="-50dp"
+                    android:background="@drawable/coeur"
+                    android:contentDescription="@string/buttonDescription"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activity_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily"
+                android:text="@string/titre" />
+
+            <RatingBar
+                android:id="@+id/activity_note"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily"
+                android:indeterminate="false"
+                android:max="5"
+                android:numStars="5"
+                android:progress="2"
+                android:progressTint="@color/jauneActivigo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    style="@android:style/Widget.DeviceDefault.ImageButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/maps"
+                    android:contentDescription="@string/buttonDescription"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/activity_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/lieu" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginBetweenWidget"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/criterePeuConnu"
+                    android:textColor="@android:color/black" />
+
+                <ProgressBar
+                    android:id="@+id/activity_progressbar_reputation"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:max="4"
+                    android:minWidth="200dp"
+                    android:minHeight="20dp"
+                    android:progress="2"
+                    android:progressTint="@color/jauneActivigo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/criterePopulaire"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/critereGratuit"
+                    android:textColor="@android:color/black" />
+
+                <ProgressBar
+                    android:id="@+id/activity_progressbar_prix"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:max="4"
+                    android:minWidth="200dp"
+                    android:minHeight="20dp"
+                    android:progress="2"
+                    android:progressTint="@color/jauneActivigo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/critereCher"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily"
+                android:layout_marginBottom="@dimen/marginBetweekWidgetSameFamily"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/critereNature"
+                    android:textColor="@android:color/black" />
+
+                <ProgressBar
+                    android:id="@+id/activity_progressbar_nature"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:max="4"
+                    android:minWidth="200dp"
+                    android:minHeight="20dp"
+                    android:progress="2"
+                    android:progressTint="@color/jauneActivigo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/critereVille"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+
+            <RadioButton
+                android:id="@+id/culturel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checked="true"
+                android:text="@string/activiteCulturelle"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/sportif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/activiteSportive"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/groupe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/activiteGroupe"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/gastronomique"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/activiteGastronomique"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/adecouvrir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/activiteADecouvrir"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/divertissement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/activiteDivertissement"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/activity_description"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily"
+                android:text="@string/notezActivite" />
+
+            <RatingBar
+                android:id="@+id/noter_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily"
+                android:max="5"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="1.0" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily"
+                android:layout_marginBottom="@dimen/marginBetweenWidget"
+                android:gravity="center|bottom">
+
+                <Button
+                    android:id="@+id/buttonJyvais"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/zone_texte_bord_rond"
+                    android:backgroundTint="@color/bleuActivigo"
+                    android:text="@string/buttonGoActivity"
+                    android:onClick="onClickGo"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/bottom_navigation_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/bleuActivigo"
+    app:itemIconTint="@android:color/white"
+    app:itemTextColor="@android:color/white"
+    app:menu="@menu/bottom_nav_menu" />
+</LinearLayout>

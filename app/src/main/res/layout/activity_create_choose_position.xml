@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/placePositionNewActivity"
+            android:textColor="@android:color/black"
+            android:padding="@dimen/paddingButton"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10">
+            <fragment
+                android:id="@+id/map"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="9"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/valider"
+                    android:layout_marginRight="@dimen/marginLeftButtons"
+                    android:background="@drawable/zone_texte_bord_rond"
+                    android:backgroundTint="@color/bleuActivigo"
+                    android:padding="@dimen/paddingButton"
+                    android:text="Valider"
+                    android:onClick="validerPosition"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/zone_texte_bord_rond"
+                    android:layout_marginLeft="@dimen/marginLeftButtons"
+                    android:backgroundTint="@color/colorAccent"
+                    android:padding="@dimen/paddingButton"
+                    android:id="@+id/annuler"
+                    android:text="Annuler"
+                    android:onClick="annulerPosition"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bleuActivigo"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>

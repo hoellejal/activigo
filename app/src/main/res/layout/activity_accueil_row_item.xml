@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/zone_texte_bord_rond"
+    android:layout_marginBottom="@dimen/marginBetweenItemListActivity">
+
+    <ImageView
+        android:id="@+id/imageActiviteAccueil"
+        android:layout_width="@dimen/widthImageActivityRowAccueil"
+        android:layout_height="@dimen/heightImageActivityRow"
+        android:contentDescription="@string/descriptionImageActivite"
+        android:layout_marginLeft="@dimen/marginLeftImageRecyclerViewAccueil"
+        android:layout_marginRight="@dimen/marginBetweenWidget"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/adventurealpsbackpack554609"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titre_activite_accueil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titre de l'activité"/>
+
+        <TextView
+            android:id="@+id/lieu_activite_accueil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lieu" />
+
+        <RatingBar
+            android:id="@+id/note_activite_accueil"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="5"
+            android:numStars="5"
+            android:progress="3"
+            android:progressTint="@color/jauneActivigo"/>
+
+    </LinearLayout>
+
+</LinearLayout>

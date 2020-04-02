@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/lightJauneActivigo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/marginLeftAccueil"
+            android:layout_marginBottom="@dimen/marginLeftAccueil">
+            <EditText
+                android:id="@+id/searchview_lieu_accueil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/searchLocationFromAccueil"
+                android:minWidth="250dp"
+                android:padding="@dimen/paddingButton"
+                android:background="@drawable/zone_texte_bord_rond"/>
+            <Button
+                android:id="@+id/button_go_recherche_accueil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/bleuActivigo"
+                android:background="@drawable/zone_texte_bord_rond"
+                android:padding="@dimen/paddingButton"
+                android:onClick="goToRechercheFromAccueil"
+                android:text="@string/go"
+                android:layout_marginLeft="@dimen/marginLeftAccueil"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2">
+            <fragment
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/marginBetweekWidgetSameFamily"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_accueil"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bleuActivigo"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>

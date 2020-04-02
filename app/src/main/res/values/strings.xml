@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">ActiviGO</string>
+    <string name="searchLocation">Où êtes vous ?</string>
+    <string name="searchLocationFromAccueil">Où voulez-vous aller ?</string>
+    <string name="buttonGoSearchActivity">C\'est parti!</string>
+    <string name="buttonRetour">Retour</string>
+    <string name="filtre">Filtres</string>
+    <string name="descriptionImageActivite">Image de l\'activité</string>
+
+    <string name="criterePeuConnu">Peu connu</string>
+    <string name="criterePopulaire">Populaire</string>
+    <string name="critereGratuit">Gratuit</string>
+    <string name="critereCher">Cher</string>
+    <string name="critereNature">Nature</string>
+    <string name="critereUrbain">Urbain</string>
+    <string name="critereVille">Ville</string>
+    <string name="critereProche">Proche</string>
+    <string name="critereLoin">Loin</string>
+    <string name="critereSportif">Sportif</string>
+    <string name="critereCulturelle">Culturel</string>
+    <string name="critereGastronomique">Gastronomique</string>
+    <string name="critereFestive">Festif</string>
+    <string name="critereCollective">Collectif</string>
+    <string name="critereDivertissement">Divertissement</string>
+    <string name="critereBudget">Budget</string>
+    <string name="critereDistance">Distance</string>
+
+
+    <string name="prixGratuit">Gratuit</string>
+    <string name="prixPeuCher">Peu cher</string>
+    <string name="prixAbordable">Abordable</string>
+    <string name="prixCher">Cher</string>
+    <string name="prixTresCher">Très cher</string>
+
+    <string name="distanceACote">A Côté</string>
+    <string name="distanceProche">Proche</string>
+    <string name="distanceMoyenne">Moyenne</string>
+    <string name="distanceLointaine">Lointaine</string>
+    <string name="distanceTresLointaine">Très \nlointaine</string>
+
+    <string name="activiteCulturelle">Activité culturelle</string>
+    <string name="activiteSportive">Activité sportive</string>
+    <string name="activiteGroupe">Activité de groupe</string>
+    <string name="activiteADecouvrir">Endroit à decouvrir</string>
+    <string name="activiteGastronomique">Activité gastronomique</string>
+    <string name="activiteDivertissement">Divertissement</string>
+    <string name="map">Map</string>
+
+    <string name="placePositionNewActivity">Indique l\'emplacement de l\'activité sur la carte</string>
+
+
+    <string name="buttonGoActivity">J\'y vais!</string>
+    <string name="notezActivite">Vous avez fait cette activité? Notez là!</string>
+    <string name="commentaire">Laissez un commentaire!</string>
+    <string name="description">Description de l\'activité</string>
+    <string name="lieu">Lieu de l\'activité</string>
+    <string name="titre">Titre de l\'activité</string>
+    <string name="imageDescription">Image de l\'activité</string>
+    <string name="buttonDescription">Bouton maps</string>
+    <string name="buttonValider">Valider</string>
+    <string name="titreProfil">Voici ton profil!</string>
+
+    <string name="choixActivitesGlobal">Pour te proposer des activités qui te correspondent au mieux, dis nous les types d\'activités que tu aimerais faire</string>
+    <string name="choixActivitesBudget">Qu\'est ton budget pour les activités ?</string>
+    <string name="showActivitesBudget">Voici ton budget pour les activités</string>
+    <string name="choixActivitesDistance">A quelle distance peux-tu aller au maximum ?</string>
+    <string name="showActivitesDistance">Voici ta distance maximale</string>
+    <string name="quantiteActivitePasDuTout">Pas du\ntout</string>
+    <string name="quantiteActivitePasVraiment">Pas\nvraiment</string>
+    <string name="quantiteActiviteSansPreference">Sans\npréférence</string>
+    <string name="quantiteActivitePlutot">Plutôt</string>
+    <string name="quantiteActiviteBeaucoup">Beaucoup</string>
+
+    <string name="mail">Mail</string>
+    <string name="user">Username</string>
+    <string name="mdp">Password</string>
+    <string name="go">GO !</string>
+    <string name="inscris">Inscription</string>
+    <string name="id">ws89</string>
+    <string name="loggedin">false</string>
+
+    <string name="channel_name">DefaultChannel</string>
+</resources>

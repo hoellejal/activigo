@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="jauneActivigo">#ea9000</color>
+    <color name="bleuActivigo">#05B99C</color>
+    <color name="violetActivigo">#4b1a59</color>
+    <color name="lightGray">#ebe9e4</color>
+    <color name="lightJauneActivigo">#ffce80</color>
+</resources>

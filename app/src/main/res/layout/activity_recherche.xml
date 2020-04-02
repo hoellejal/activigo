@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTopApplication"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@android:style/Widget.DeviceDefault.ImageButton"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/magnifyingglass"
+                android:layout_marginRight="@dimen/marginBetweekWidgetSameFamily"
+                android:contentDescription="@string/buttonDescription"/>
+
+            <EditText
+                android:id="@+id/searchview_lieu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/searchLocation"
+                android:minWidth="250dp"
+                android:padding="@dimen/paddingButton"
+                android:background="@drawable/zone_texte_bord_rond"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/marginBetweenWidget">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="@string/criterePeuConnu"/>
+
+            <SeekBar
+                android:id="@+id/seek_bar_popularite"
+                android:layout_width="@dimen/seekBarWidth"
+                android:layout_height="wrap_content"
+                android:max="4"
+                android:progress="2"
+                android:progressTint="@color/lightGray"
+                android:thumb="@drawable/seek_bar_custom_thumb"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="@string/criterePopulaire"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="@string/critereGratuit"/>
+
+            <SeekBar
+                android:id="@+id/seek_bar_prix"
+                android:layout_width="@dimen/seekBarWidth"
+                android:layout_height="wrap_content"
+                android:max="4"
+                android:progress="2"
+                android:progressTint="@color/lightGray"
+                android:thumb="@drawable/seek_bar_custom_thumb"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="@string/critereCher"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="@string/critereNature"/>
+
+            <SeekBar
+                android:id="@+id/seek_bar_nature"
+                android:layout_width="@dimen/seekBarWidth"
+                android:layout_height="wrap_content"
+                android:max="4"
+                android:progress="2"
+                android:progressTint="@color/lightGray"
+                android:thumb="@drawable/seek_bar_custom_thumb"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="@string/critereVille"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily">
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="3px"
+            android:layout_marginTop="@dimen/marginBetweenWidget"
+            android:layout_gravity="center"
+            android:background="@android:color/black" />
+
+        <CheckBox
+            android:id="@+id/checkbox_culture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/jauneActivigo"
+            android:layout_marginTop="@dimen/marginBetweenWidget"
+            android:layout_marginLeft="@dimen/marginLeftApplication"
+            android:text="@string/activiteCulturelle"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/jauneActivigo"
+            android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily"
+            android:layout_marginLeft="@dimen/marginLeftApplication"
+            android:text="@string/activiteSportive"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_groupe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/jauneActivigo"
+            android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily"
+            android:layout_marginLeft="@dimen/marginLeftApplication"
+            android:text="@string/activiteGroupe"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_endroits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/jauneActivigo"
+            android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily"
+            android:layout_marginLeft="@dimen/marginLeftApplication"
+            android:text="@string/activiteADecouvrir"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_gastronomie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/jauneActivigo"
+            android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily"
+            android:layout_marginLeft="@dimen/marginLeftApplication"
+            android:text="@string/activiteGastronomique"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_divertissement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/jauneActivigo"
+            android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily"
+            android:layout_marginLeft="@dimen/marginLeftApplication"
+            android:text="@string/activiteDivertissement"/>
+
+        <Button
+            android:id="@+id/button_go_recherche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginBetweenWidget"
+            android:layout_marginBottom="@dimen/marginTopApplication"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/bleuActivigo"
+            android:background="@drawable/zone_texte_bord_rond"
+            android:padding="@dimen/paddingButton"
+            android:onClick="goToResultatRecherche"
+            android:text="@string/buttonGoSearchActivity"/>
+
+    </LinearLayout>
+
+</ScrollView>

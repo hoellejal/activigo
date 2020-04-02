@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:name="com.google.android.gms.maps.SupportMapFragment">
+
+
+        </fragment>
+        <Button
+            android:id="@+id/button_go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="left|bottom"
+            android:backgroundTint="@color/bleuActivigo"
+            android:background="@drawable/zone_texte_bord_rond"
+            android:padding="@dimen/paddingButton"
+            android:onClick="goBack"
+            android:text="@string/buttonRetour"/>
+
+    </FrameLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bleuActivigo"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>

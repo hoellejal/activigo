@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginTopApplication">30dp</dimen>
+    <dimen name="seekBarWidth">200dp</dimen>
+    <dimen name="seekBarWidthLarge">230dp</dimen>
+    <dimen name="marginBetweenWidget">40dp</dimen>
+    <dimen name="marginBetweekWidgetSameFamily">20dp</dimen>
+    <dimen name="marginLeftApplication">50dp</dimen>
+    <dimen name="marginLeftButtons">30dp</dimen>
+    <dimen name="paddingButton">10dp</dimen>
+    <dimen name="tailleButtonMap">100dp</dimen>
+    <dimen name="marginBetweenKmAndStars">40dp</dimen>
+    <dimen name="heightImageActivityRow">80dp</dimen>
+    <dimen name="widthImageActivityRowAccueil">80dp</dimen>
+    <dimen name="marginLeftImageRecyclerViewAccueil">30dp</dimen>
+    <dimen name="heightImageActivityDetails">200dp</dimen>
+    <dimen name="marginRecyclerView">60dp</dimen>
+    <dimen name="marginBetweenItemListActivity">10dp</dimen>
+
+    <dimen name="texteSizeSeekBar">12sp</dimen>
+
+    <dimen name="marginBottomForMenu">80dp</dimen>
+
+    <dimen name="textProfilSize">20sp</dimen>
+    <dimen name="marginLeftAccueil">10dp</dimen>
+</resources>

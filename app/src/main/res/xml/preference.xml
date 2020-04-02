@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory
+    android:title="General options">
+    <CheckBoxPreference
+        android:key = "loggedin"
+        android:defaultValue="false"
+        android:title="Logged in"
+        android:summary="Is the user logged in" />
+
+    <EditTextPreference
+        android:key="id"
+        android:defaultValue="0"
+        android:title="User id"
+        android:summary="id of the user"/>
+</PreferenceCategory>
+</PreferenceScreen>

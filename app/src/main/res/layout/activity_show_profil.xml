@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/marginBetweenWidget">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/titreProfil"
+                    android:textSize="@dimen/textProfilSize"
+                    android:textColorHighlight="@color/violetActivigo"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_marginTop="@dimen/marginBetweenWidget">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/quantiteActivitePasDuTout"
+                    android:textSize="@dimen/texteSizeSeekBar"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/quantiteActivitePasVraiment"
+                    android:textSize="@dimen/texteSizeSeekBar"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/quantiteActiviteSansPreference"
+                    android:textSize="@dimen/texteSizeSeekBar"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/quantiteActivitePlutot"
+                    android:textSize="@dimen/texteSizeSeekBar"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/quantiteActiviteBeaucoup"
+                    android:textSize="@dimen/texteSizeSeekBar"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="@dimen/marginBetweenWidget">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/critereSportif"/>
+
+                <SeekBar
+                    android:id="@+id/profilSeekBarSportif"
+                    android:layout_width="@dimen/seekBarWidthLarge"
+                    android:layout_height="wrap_content"
+                    android:max="4"
+                    android:progress="2"
+                    android:progressTint="@color/lightGray"
+                    android:thumb="@drawable/seek_bar_custom_thumb"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/criterePeuConnu"/>
+
+                <SeekBar
+                    android:id="@+id/profilSeekBarConnu"
+                    android:layout_width="@dimen/seekBarWidthLarge"
+                    android:layout_height="wrap_content"
+                    android:max="4"
+                    android:progress="2"
+                    android:progressTint="@color/lightGray"
+                    android:thumb="@drawable/seek_bar_custom_thumb"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/criterePopulaire"/>
+
+                <SeekBar
+                    android:id="@+id/profilSeekBarPopulaire"
+                    android:layout_width="@dimen/seekBarWidthLarge"
+                    android:layout_height="wrap_content"
+                    android:max="4"
+                    android:progress="2"
+                    android:progressTint="@color/lightGray"
+                    android:thumb="@drawable/seek_bar_custom_thumb"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/critereNature"/>
+
+                <SeekBar
+                    android:id="@+id/profilSeekBarNature"
+                    android:layout_width="@dimen/seekBarWidthLarge"
+                    android:layout_height="wrap_content"
+                    android:max="4"
+                    android:progress="2"
+                    android:progressTint="@color/lightGray"
+                    android:thumb="@drawable/seek_bar_custom_thumb"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/critereUrbain"/>
+
+                <SeekBar
+                    android:id="@+id/profilSeekBarUrbain"
+                    android:layout_width="@dimen/seekBarWidthLarge"
+                    android:layout_height="wrap_content"
+                    android:max="4"
+                    android:progress="2"
+                    android:progressTint="@color/lightGray"
+                    android:thumb="@drawable/seek_bar_custom_thumb"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/critereCulturelle"/>
+
+                <SeekBar
+                    android:id="@+id/profilSeekBarCulturel"
+                    android:layout_width="@dimen/seekBarWidthLarge"
+                    android:layout_height="wrap_content"
+                    android:max="4"
+                    android:progress="2"
+                    android:progressTint="@color/lightGray"
+                    android:thumb="@drawable/seek_bar_custom_thumb"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/critereGastronomique"/>
+
+                <SeekBar
+                    android:id="@+id/profilSeekBarGastro"
+                    android:layout_width="@dimen/seekBarWidthLarge"
+                    android:layout_height="wrap_content"
+                    android:max="4"
+                    android:progress="2"
+                    android:progressTint="@color/lightGray"
+                    android:thumb="@drawable/seek_bar_custom_thumb"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/critereCollective"/>
+
+                <SeekBar
+                    android:id="@+id/profilSeekBarCollectif"
+                    android:layout_width="@dimen/seekBarWidthLarge"
+                    android:layout_height="wrap_content"
+                    android:max="4"
+                    android:progress="2"
+                    android:progressTint="@color/lightGray"
+                    android:thumb="@drawable/seek_bar_custom_thumb"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/critereDivertissement"/>
+
+                <SeekBar
+                    android:id="@+id/profilSeekBarDivertissement"
+                    android:layout_width="@dimen/seekBarWidthLarge"
+                    android:layout_height="wrap_content"
+                    android:max="4"
+                    android:progress="2"
+                    android:progressTint="@color/lightGray"
+                    android:thumb="@drawable/seek_bar_custom_thumb"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/marginBetweenWidget">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/showActivitesBudget"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_marginTop="@dimen/marginBetweenWidget">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/prixGratuit"
+                    android:textSize="@dimen/texteSizeSeekBar"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/prixPeuCher"
+                    android:textSize="@dimen/texteSizeSeekBar"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/prixAbordable"
+                    android:textSize="@dimen/texteSizeSeekBar"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/prixCher"
+                    android:textSize="@dimen/texteSizeSeekBar"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/prixTresCher"
+                    android:textSize="@dimen/texteSizeSeekBar"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginBetweekWidgetSameFamily"
+                android:layout_marginBottom="@dimen/marginBetweenWidget"
+                android:layout_marginRight="25dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/critereBudget"
+                    android:textColor="@android:color/black" />
+
+                <SeekBar
+                    android:id="@+id/profilSeekBarBudget"
+                    android:layout_width="@dimen/seekBarWidthLarge"
+                    android:layout_height="wrap_content"
+                    android:max="4"
+                    android:progress="2"
+                    android:progressTint="@color/lightGray"
+                    android:thumb="@drawable/seek_bar_custom_thumb" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/marginBetweenWidget"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/valider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/marginLeftButtons"
+                    android:background="@drawable/zone_texte_bord_rond"
+                    android:backgroundTint="@color/bleuActivigo"
+                    android:padding="@dimen/paddingButton"
+                    android:text="Valider" />
+
+                <Button
+                    android:id="@+id/annuler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/marginLeftButtons"
+                    android:background="@drawable/zone_texte_bord_rond"
+                    android:backgroundTint="@color/jauneActivigo"
+                    android:onClick="logout"
+                    android:padding="@dimen/paddingButton"
+                    android:text="Logout" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bleuActivigo"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>
+
